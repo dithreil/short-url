@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>
+        {{ title }}
+    </h1>
+    <div>
+        <p>{{ added }}</p>
+    </div>
+    <form method="post" action="{{ path('app.short-url.post_create') }}">
+        <label for="long">Enter URL</label>
+        <input id="long" name="long" type="text" required/>
+        <button type="submit">Создать</button>
+    </form>
+    <form method="post" action="{{ path('app.short-url.post_redirect') }}">
+        <label for="redirect">Enter short URL</label>
+        <input id="redirect" name="redirect" type="text" required/>
+        <button type="submit">Переадресация</button>
+    </form>
+
+{% endblock %}
