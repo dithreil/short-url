@@ -17,7 +17,6 @@ use Doctrine\Persistence\ManagerRegistry;
 class UriEntryRepository extends ServiceEntityRepository
 {
     /**
-     * UriEntryRepository constructor.
      * @param ManagerRegistry $registry
      */
     public function __construct(ManagerRegistry $registry)
