@@ -5,8 +5,8 @@
 ## Как развернуть проект
 ### Скачивание необходимых файлов:
 ```shell script
-git clone this repo
-cd project-dir
+git clone https://github.com/dithreil/short-url.git
+cd short-url
 composer install
 ```
 
